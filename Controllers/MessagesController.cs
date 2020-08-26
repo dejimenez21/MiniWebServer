@@ -15,6 +15,7 @@ namespace Http_Server.Controllers
             _repo = repo;
         }
 
+        //GET /messages
         [HttpGet]  
         public ActionResult <IEnumerable<Message>> GetAllMessages()
         {
@@ -23,12 +24,22 @@ namespace Http_Server.Controllers
             return Ok(msgItems);
         }
 
+        //POST /messages
         [HttpPost]  
         public ActionResult <Message> CreateMessage(Message msg)
         {
             _repo.CreateMessage(msg);
             
             return Created("/messages", msg);
+        }
+
+        //PUT /messages/{id}
+        [HttpPut("{id}")]
+        public ActionResult<Message> UpdateMessage(int id, Message msg)
+        {
+            msg.Id = id;
+            _repo.UpdateMessage(msg);
+            return Ok(msg);
         }
     }
 }

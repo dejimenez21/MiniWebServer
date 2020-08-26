@@ -7,5 +7,6 @@ namespace Http_Server.Data
     {
         IEnumerable<Message> GetAllMessages();
         void CreateMessage(Message msg);
+        void UpdateMessage(Message msg);
     }
 }

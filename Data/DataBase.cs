@@ -19,7 +19,7 @@ namespace Http_Server.Data
             IdCounter = 2;
         }
 
-        public static void SaveNewMessage(Message msg)
+        public static void CreateMessage(Message msg)
         {
             IdCounter++;
             msg.Id = IdCounter;

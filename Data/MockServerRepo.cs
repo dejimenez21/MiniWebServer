@@ -7,12 +7,17 @@ namespace Http_Server.Data
     {
         public void CreateMessage(Message msg)
         {
-            DataBase.SaveNewMessage(msg);
+            DataBase.CreateMessage(msg);
         }
 
         public IEnumerable<Message> GetAllMessages()
         {
             return DataBase.messages;
+        }
+
+        public void UpdateMessage(Message msg)
+        {
+            DataBase.messages.Find(x=>x.Id==msg.Id).Body = msg.Body;
         }
     }
 }
