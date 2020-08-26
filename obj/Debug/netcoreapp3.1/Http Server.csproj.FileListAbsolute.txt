@@ -1,0 +1,20 @@
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.exe
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.deps.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.runtimeconfig.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.runtimeconfig.dev.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.dll
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\bin\Debug\netcoreapp3.1\Http Server.pdb
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.csprojAssemblyReference.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.AssemblyInfoInputs.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.AssemblyInfo.cs
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.csproj.CoreCompileInputs.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.RazorTargetAssemblyInfo.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\staticwebassets\Http Server.StaticWebAssets.Manifest.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\staticwebassets\Http Server.StaticWebAssets.xml
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.dll
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.pdb
+C:\Users\dejim\OneDrive\Documents\INTEC\Desarrollo web\Http Server\obj\Debug\netcoreapp3.1\Http Server.genruntimeconfig.cache
