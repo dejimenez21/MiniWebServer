@@ -10,6 +10,11 @@ namespace Http_Server.Data
             DataBase.CreateMessage(msg);
         }
 
+        public void DeleteMessage(int id)
+        {
+            DataBase.messages.RemoveAll(x=>x.Id==id);
+        }
+
         public IEnumerable<Message> GetAllMessages()
         {
             return DataBase.messages;
@@ -19,5 +24,7 @@ namespace Http_Server.Data
         {
             DataBase.messages.Find(x=>x.Id==msg.Id).Body = msg.Body;
         }
+
+        
     }
 }

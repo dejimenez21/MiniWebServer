@@ -26,7 +26,7 @@ namespace Http_Server.Controllers
 
         //POST /messages
         [HttpPost]  
-        public ActionResult <Message> CreateMessage(Message msg)
+        public ActionResult CreateMessage(Message msg)
         {
             _repo.CreateMessage(msg);
             
@@ -35,11 +35,19 @@ namespace Http_Server.Controllers
 
         //PUT /messages/{id}
         [HttpPut("{id}")]
-        public ActionResult<Message> UpdateMessage(int id, Message msg)
+        public ActionResult UpdateMessage(int id, Message msg)
         {
             msg.Id = id;
             _repo.UpdateMessage(msg);
             return Ok(msg);
+        }
+
+        //DELETE /messages/{id}
+        [HttpDelete("{id}")]
+        public ActionResult DeleteMessage(int id)
+        {
+            _repo.DeleteMessage(id);
+            return Ok();
         }
     }
 }
