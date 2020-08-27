@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Http_Server.Models;
 using Http_Server.Data;
 using System.Collections.Generic;
+using System;
 
 namespace Http_Server.Controllers
 {
@@ -28,6 +29,10 @@ namespace Http_Server.Controllers
         [HttpPost]  
         public ActionResult CreateMessage(Message msg)
         {
+            if(msg.Body == null)
+            {
+                return BadRequest();
+            }
             _repo.CreateMessage(msg);
             
             return Created("/messages", msg);
@@ -37,8 +42,17 @@ namespace Http_Server.Controllers
         [HttpPut("{id}")]
         public ActionResult UpdateMessage(int id, Message msg)
         {
+            
             msg.Id = id;
-            _repo.UpdateMessage(msg);
+            try
+            {
+                _repo.UpdateMessage(msg);
+            }
+            catch(NullReferenceException)
+            {
+                return NotFound("Ese ID de mensaje no existe");
+            }
+            
             return Ok(msg);
         }
 
@@ -46,7 +60,14 @@ namespace Http_Server.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteMessage(int id)
         {
-            _repo.DeleteMessage(id);
+            try
+            {
+                _repo.DeleteMessage(id);
+            }
+            catch(NullReferenceException)
+            {
+                return NotFound("Ese ID de mensaje no existe");
+            }
             return Ok();
         }
     }
